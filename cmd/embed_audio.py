@@ -133,7 +133,7 @@ def embed_audio(slide_number, pptx_path, mp3_path, icon_path='audio_icon.png'):
         spTree.append(ET.fromstring(pic_xml))
 
         timing_xml = f"""
-<p:timing>
+<p:timing xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main">
     <p:tnLst>
         <p:par>
             <p:cTn id="1" dur="indefinite" restart="never" nodeType="tmRoot">
